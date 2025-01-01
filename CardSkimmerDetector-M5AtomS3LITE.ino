@@ -31,7 +31,7 @@ class MyAdvertisedDeviceCallbacks : public BLEAdvertisedDeviceCallbacks {
         int month = (deviceAddress.charAt(6) - '0') * 10 + (deviceAddress.charAt(7) - '0');
         int day = (deviceAddress.charAt(9) - '0') * 10 + (deviceAddress.charAt(10) - '0');
         int year = year1 * 100 + year2;
-        int currentYear = 2024; // Dynamically set this to the current year
+        int currentYear = 2025; // Dynamically set this to the current year
 
         // Evaluate if the device is a known skimmer based on its name, RNBT pattern, MAC prefix, or manufacturing date
         bool isSkimmer = std::regex_search(devName, rnbtPattern) || isRnSkimmer;
